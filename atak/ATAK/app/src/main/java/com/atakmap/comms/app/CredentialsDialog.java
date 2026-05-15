@@ -177,6 +177,21 @@ public class CredentialsDialog {
                             }
                         })
 
+                .setNeutralButton(appCtx.getString(R.string.demo_oidc_login),
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(
+                                    DialogInterface dialog,
+                                    int which) {
+                                DemoOidcAuthenticationActivity
+                                        .beginDemoAuthentication(
+                                                desc, connectString,
+                                                cacheCreds, expiration,
+                                                context, callback);
+                                dialog.dismiss();
+                            }
+                        })
+
                 .setNegativeButton(appCtx.getString(R.string.cancel),
                         new DialogInterface.OnClickListener() {
                             @Override

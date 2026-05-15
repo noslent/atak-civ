@@ -341,6 +341,22 @@
             android:configChanges="orientation"
             android:screenOrientation="behind" />
         <activity
+            android:name="com.atakmap.comms.app.DemoOidcAuthenticationActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="callback"
+                    android:scheme="atak-oidc-demo" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:exported="false" 
             android:name="com.atakmap.comms.app.CotInputsListActivity"
             android:configChanges="orientation"
