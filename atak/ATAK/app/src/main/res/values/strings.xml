@@ -2271,6 +2271,7 @@
   <string name="loading">Loading</string>
   <string name="connection_info">Connection Info: %1$s (%2$s)</string>
   <string name="enter_credentials">Enter Credentials</string>
+  <string name="demo_oidc_login">Demo OIDC Login</string>
   <string name="secure_delete">Secure Delete</string>
   <string name="export_logs">Export Logs</string>
   <string name="connection_error">Connection Error</string>
